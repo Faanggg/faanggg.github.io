@@ -6,18 +6,27 @@
 	<title>WEBDEV ICA2</title>
 	<link rel = "stylesheet" href = "style.css">
 	<script src = "script.js" defer></script>
-</head>
+</head>	
 <body>
-	<header>
-		<h1>Battleships</h1>
-	</header>
+	<header><b>Battleships</b></header>
 	<nav>
+		<button id = "hamIcon">Menu</button>
 		<ul>
-			<li><button>Home</button></li>
-			<li><button>History</button></li>
-			<li><button>Famous Battleships</button></li>
+		  <li class = "button" id = "page1Button">Home</li>
+		  <li class = "button" id = "page2Button">News</li>
+		  <li class = "button" id = "page3Button">Contact</li>
 		</ul>
 	</nav>
-	
+	<div class = "container">
+		<div class = "page" id = "page1">
+			page 1
+		</div>
+		<div class = "page" id = "page2">
+			page 2
+		</div>
+		<div class = "page" id = "page3">
+			page 3
+		</div>
+	</div>
 </body>
 </html>

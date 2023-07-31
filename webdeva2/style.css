@@ -1,11 +1,57 @@
-header{
-	text-align: center;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
 }
 
-nav{
-	text-align: center;
+li {
+  float: left;
 }
 
-nav ul li{
-	display: inline;
+li.button {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.button:hover {
+  background-color: #333;
+}
+
+header {
+	color: white;
+	background-color: #333;
+	text-align: center;
+	padding: 10px 16px;
+	font-size: 2em;
+}
+
+.container {
+	display: flex;
+}
+.page {
+	width: 80vw;
+	height: 80vh;
+}
+#page1 {
+	background: red;
+}
+#page2 {
+	background: green;
+}
+#page3 {
+	background: blue;
+}
+#hamIcon {
+	display: none;
+}
+
+@media screen and (max-width:800px) {
+	nav ul li {display: block;}
+	#hamIcon {display: block;}
+	ul li.button {display: none;}
 }
