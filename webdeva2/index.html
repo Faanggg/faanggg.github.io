@@ -1,31 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset = "UTF-8">
-	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-	<title>WEBDEV ICA2</title>
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<title>Battleships</title>
+	<link rel = "icon" href = "Images/BattleshipFaviIcon.png">
 	<link rel = "stylesheet" href = "style.css">
 	<script src = "script.js" defer></script>
-</head>	
+</head>
 <body>
-	<header><b>Battleships</b></header>
-	<nav>
-		<button id = "hamIcon">Menu</button>
-		<ul>
-		  <li class = "button" id = "page1Button">Home</li>
-		  <li class = "button" id = "page2Button">News</li>
-		  <li class = "button" id = "page3Button">Contact</li>
-		</ul>
-	</nav>
-	<div class = "container">
+	<div class = "heading">
+		<header class = "title">
+			<h1>Battleships</h1>
+		</header>
+		<button class = "navi" id = "hamIcon"><img src = "Images/hamIcon.png"></button>
+		<nav>
+			<ul id = "menuList">
+				<li><button class = "navi" id = "page1Button">About</button></li>
+				<li><button class = "navi" id = "page2Button">History</button></li>
+				<li><button class = "navi" id = "page3Button">Famous Battleships</button></li>
+			</ul>
+		</nav>
+	</div>
+	<div id = "container">
 		<div class = "page" id = "page1">
-			page 1
+			<div class = "aboutSection">
+				<h2>What are Battleships</h2>
+				<img class = "left" src = "Images/Richelieu.jpg" height = "150">
+				<p>Battleships were the capital ships of the world's navies from about 1860, when it began to supplant the wooden-hulled, sail driven <dfn title = "A type of sailing warship that formed the backbone of the Western world's great navies from the mid-17th century through the mid-19th century, when it gave way to the steam-powered battleship.">ship of the line</dfn>, to World War II, when its position was taken over by <dfn title = "A naval vessel from which airplanes may take off and land on.">aircraft carriers</dfn>. They combined large size, powerful guns, heavy armor and underwater protection with fairly high speed, great cruising radius and general sea-worthiness. At their peak, they were able to hit targets with great precision at ranges of over 30km and were able to absorb heavy damage while remaining afloat and continuing to fight. In World War II, battleships mainly served to bombard enemy coastal defenses in preparation for amphibious assault and as part of the air-defense for carrier task forces.</p>
+				<br>
+				<br>
+				<br>
+			</div>
+			<div class = "aboutSection">
+				<h2>End of Their Time</h2>
+				<img class = "right" src = "Images/USS_Missouri.jpg" height = "150">
+				<p>After World War II, it became apparent that battleships were no longer worth the considerable cost of construction and maintenance. As the role of aircraft engagements grew, ranges grew longer and longer, making heavy gun armament irrelevant. The armor of battleships were equally irrelevant in the face of nuclear missles, with ranges of 100km or more, that could be mounted on smaller vessel classes such as destroyers. By the end of the 1950s, these ships, which formerly offered no noteworthy opposition to battleships, were now capable of eliminating battleships from outside the range of the ship's heavy guns. The last battleship, USS Missouri, was decommissioned in 1991.</p>
+				<br>
+				<br>
+				<br>
+			</div>
 		</div>
 		<div class = "page" id = "page2">
-			page 2
+			page 2 content
 		</div>
 		<div class = "page" id = "page3">
-			page 3
+			<div class = "famousSection">
+				<h2>Yamato</h2>
+				<img class = "left" src = "Images/IJN_Yamato.jpg" height = "150">
+				<h3>Yamato-class battleship</h3>
+				<p>Yamato was the lead ship of her class of battleships built for the Imperial Japanese Navy (IJN) shortly before World War II. She and her sister ship, Musashi, were the heaviest and most powerfully armed battleships ever constructed, displacing nearly 72,000 tonnes at full load and armed with nine 46cm Type 94 main guns, which were the largest guns ever mounted on a warship.</p>
+				<br>
+				<br>
+				<h4>More details</h4>
+			</div>
 		</div>
 	</div>
 </body>
