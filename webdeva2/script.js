@@ -11,6 +11,7 @@ function hideAllPages() { //function to hide all pages
 		onepage.style.display = "none"; //hide it
 	}
 }
+
 function showPage(pageno) { //function to show selected page no
 	hideAllPages();
 	//select the page based on the parameter passed in
@@ -84,6 +85,53 @@ detail6Button.addEventListener("click", function() {
 	showDetail(6);
 });
 
+// Function to enter fullscreen mode
+function enterFullscreen() {
+	if (document.documentElement.requestFullscreen) {
+		document.documentElement.requestFullscreen();
+	} 
+	else if (document.documentElement.mozRequestFullScreen) { // Firefox
+		document.documentElement.mozRequestFullScreen();
+	} 
+	else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+			document.documentElement.webkitRequestFullscreen();
+	} 
+	else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+	document.documentElement.msRequestFullscreen();
+	}
+}
+
+// Function to exit fullscreen mode
+function exitFullscreen() {
+	if (document.exitFullscreen) {
+		document.exitFullscreen();
+	} 
+	else if (document.mozCancelFullScreen) { // Firefox
+		document.mozCancelFullScreen();
+	} 
+	else if (document.webkitExitFullscreen) { // Chrome, Safari, and Opera
+		document.webkitExitFullscreen();
+	} 
+	else if (document.msExitFullscreen) { // IE/Edge
+		document.msExitFullscreen();
+	}
+}
+
+const fullscreenButton = document.querySelector("#fullscreen");
+var isFullscreen = "false";
+
+fullscreenButton.addEventListener("click", toggleFullscreen);
+
+function toggleFullscreen() {
+	if (isFullscreen == "false") {
+		enterFullscreen();
+		isFullscreen = "true";
+	}
+	else if (isFullscreen == "true") {
+		exitFullscreen();
+		isFullscreen = "false";
+	}
+}
 
 
 

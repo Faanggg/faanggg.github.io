@@ -26,6 +26,17 @@ h2, h4 {
 	padding: 5px;
 }
 
+h2#fullscreen {
+	text-align: center;
+}
+
+button#fullscreen {
+	border: none;
+	background-color: #4287f5;
+	color: purple;
+	font-size: 20px;
+}
+
 h3 {
 	margin: 10px;
 }
