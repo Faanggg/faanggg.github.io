@@ -30,7 +30,7 @@ h2#fullscreen {
 	text-align: center;
 }
 
-button#fullscreen {
+button#fullscreenButton {
 	border: none;
 	background-color: #4287f5;
 	color: purple;
