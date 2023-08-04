@@ -17,9 +17,17 @@ header {
 	text-align: center;
 }
 
+dfn {
+	color: darkblue;
+}
+
 h2, h4 {
 	background-color: #4287f5;
 	padding: 5px;
+}
+
+h3 {
+	margin: 10px;
 }
 
 p {
@@ -27,7 +35,7 @@ p {
 	font-size: 20px;
 }
 
-img.left {
+img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -35,12 +43,30 @@ img.left {
 	width: 50%;
 }
 
-img.right {
+img.QRCode {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	height: auto;
-	width: 50%;
+	width: 15%;
+}
+
+div.slide-up {
+	overflow: hidden;
+}
+
+div.slide-up p {
+	animation: 2s slide-up;
+	margin-top: 1%;
+}
+
+@keyframes slide-up {
+	from {
+		margin-top: 100%;
+	}
+	to {
+		margin-top: 1%;
+	}
 }
 
 .heading {
@@ -57,7 +83,11 @@ img.right {
 	flex-wrap: wrap;
 }
 
-.aboutSection {
+.aboutContent {
+	background-color: #42cbf5;
+}
+
+.historyContent {
 	background-color: #42cbf5;
 }
 
@@ -65,10 +95,24 @@ img.right {
 	background-color: #42cbf5;
 }
 
+.link {
+	font-size: 15px;
+}
+
 .navi {
 	background-color: #333;
 	color: white;
 	border: none;
+}
+
+.detailButton {
+	background-color: #4287f5;
+	border: none;
+}
+
+.filler {
+	height: 200px;
+	background-color: red;
 }
 
 #hamIcon {
@@ -79,9 +123,62 @@ img.right {
 	display: inline; /*!important*/
 }
 
+#timeperiod1 {
+	height: 100px;
+}
+
+#timeperiod2 {
+	height: 150px;
+}
+
+#timeperiod3 {
+	height: 150px;
+}
+
+#timeperiod4 {
+	height: 100px;
+}
+
+#timeperiod5 {
+	height: 120px;
+}
+
+#timeperiod6 {
+	height: 170px;
+}
+
+#timeperiod7 {
+	height: 210px;
+}
+
+#timeperiod7 {
+	height: 210px;
+}
+
+#timeperiod8 {
+	height: 150px;
+}
+
+#timeperiod9 {
+	height: 250px;
+}
+
+#timeperiod10 {
+	height: 170px;
+}
+
+#timeperiod11 {
+	height: 170px;
+}
+
+#timeperiod12 {
+	height: 120px;
+}
+
 @media screen and (max-width:800px){
 	nav ul li {
 		display: block;
+		height: 40px;
 	}
 	
 	nav ul {
@@ -98,9 +195,13 @@ img.right {
 		grid-column-start: 1;
 		grid-column-end: 6;
 	}
+	
+	.QRCode {
+		display: none;
+	}
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:810px) {
 	img.left {
 		margin: 10px;
 		width: 200px;
@@ -111,6 +212,26 @@ img.right {
 		margin: 10px;
 		width: 200px;
 		float: right;
+	}
+	
+	div.about-right {
+		float: right;
+		width: 50%;
+	}
+	
+	div.about-left {
+		float: left;
+		width: 50%;
+	}
+	
+	div.history-right {
+		float: right;
+		width: 60%;
+	}
+	
+	div.history-left {
+		float: left;
+		width: 60%;
 	}
 }
 
