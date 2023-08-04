@@ -5,7 +5,7 @@ const page3Button = document.querySelector("#page3Button");
 var allpages = document.querySelectorAll(".page");
 
 hideAllPages();
-showPage(2);
+showPage(1);
 function hideAllPages() { //function to hide all pages
 	for (let onepage of allpages) { //go through all subtopic pages
 		onepage.style.display = "none"; //hide it
