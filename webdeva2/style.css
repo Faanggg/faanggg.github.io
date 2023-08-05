@@ -26,6 +26,10 @@ h2, h4 {
 	padding: 5px;
 }
 
+h2.QRCode {
+	text-align: center;
+}
+
 h2#fullscreen {
 	text-align: center;
 }
@@ -44,6 +48,10 @@ h3 {
 p {
 	margin: 10px;
 	font-size: 20px;
+}
+
+p.aboutPara {
+	height: 300px;
 }
 
 img {
