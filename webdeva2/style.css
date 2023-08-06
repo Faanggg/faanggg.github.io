@@ -100,6 +100,7 @@ div.slide-up p {
 .container {
 	display: flex;
 	flex-wrap: wrap;
+	box-sizing: border-box;
 }
 
 .aboutContent {
@@ -112,6 +113,21 @@ div.slide-up p {
 
 .famousSection {
 	background-color: #42cbf5;
+}
+
+.quizSection {
+	background-color: #42cbf5;
+	margin: 50px;
+}
+
+.quiz {
+	padding: 20px;
+}
+
+.quizButton {
+	width: 100%;
+	height: 30px;
+	text-align: left;
 }
 
 .link {
@@ -132,6 +148,14 @@ div.slide-up p {
 .filler {
 	height: 200px;
 	background-color: red;
+}
+
+.correct {
+	background-color: #9aeabc;
+}
+
+.incorrect {
+	background-color: #ff9393;
 }
 
 #hamIcon {
@@ -192,6 +216,10 @@ div.slide-up p {
 
 #timeperiod12 {
 	height: 120px;
+}
+
+#nextButton {
+	display: none;
 }
 
 @media screen and (max-width:800px){

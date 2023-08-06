@@ -12,12 +12,12 @@
 	<meta name = "apple-mobile-web-app-status-bar-style" content = "black">
 	<meta name = "apple-mobile-web-app-title" content = "some web app!!!">
 	<!-- get icons from https://favicon.io/ -->
-	<link rel = "icon" type = "image/x-icon" href = "Icons/favicon.ico">
+	<link rel = "icon" type = "image/x-icon" href = "images/BattleshipFaviIcon.png">
 	<link rel = "apple-touch-icon" sizes = "180x180" href = "Icons/apple-touch-icon.png">
-	<link rel = "icon" type = "image/png" sizes = "32x32" href = "Icons/favicon-32x32.png">
-	<link rel = "icon" type = "image/png" sizes = "16x16" href = "Icons/favicon-16x16.png">
+	<link rel = "icon" type = "image/png" sizes = "32x32" href = "images/BattleshipFaviIcon.png">
+	<link rel = "icon" type = "image/png" sizes = "16x16" href = "images/BattleshipFaviIcon.png">
 	<!--for android-->
-	<link rel = "manifest" href = "Icons/site.webmanifest">
+	<link rel = "manifest" href = "images/BattleshipFaviIcon.png">
 </head>
 <body>
 	<div class = "heading">
@@ -30,6 +30,7 @@
 				<li><button class = "navi" id = "page1Button">About</button></li>
 				<li><button class = "navi" id = "page2Button">History</button></li>
 				<li><button class = "navi" id = "page3Button">Famous Battleships</button></li>
+				<li><button class = "navi" id = "page4Button">Quiz</button></li>
 			</ul>
 		</nav>
 	</div>
@@ -389,6 +390,21 @@
 					</ul>
 					<p class = "link">Click <a href = "https://en.wikipedia.org/wiki/USS_Missouri_(BB-63)#" target = "_blank">here</a> to learn more.</p>
 					<br>
+				</div>
+			</div>
+		</div>
+		<div class = "page" id = "page4">
+			<div class = "quizSection">
+				<h2>Quiz Time</h2>
+				<div class = "quiz">
+					<h3 id = "question">Question</h3>
+					<div id = "answerButtons">
+						<button class = "quizButton">Answer1</button>
+						<button class = "quizButton">Answer2</button>
+						<button class = "quizButton">Answer3</button>
+						<button class = "quizButton">Answer4</button>
+					</div>
+					<button id = "nextButton">Next question</button>
 				</div>
 			</div>
 		</div>
